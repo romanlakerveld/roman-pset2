@@ -15,42 +15,58 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose your story" />
+            android:text="@string/chooseIntro" />
 
-        <Button
-            android:id="@+id/simple"
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Simple"
-            android:onClick="onButtonClicked"/>
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/tarzan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tarzan"
-            android:onClick="onButtonClicked"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <Button
-            android:id="@+id/university"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Univerity"
-            android:onClick="onButtonClicked"/>
+                <Button
+                    android:id="@+id/dance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButtonClicked"
+                    android:text="dance" />
 
-        <Button
-            android:id="@+id/clothes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="clothes"
-            android:onClick="onButtonClicked"/>
+                <Button
+                    android:id="@+id/clothes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButtonClicked"
+                    android:text="clothes" />
 
-        <Button
-            android:id="@+id/dance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="dance"
-            android:onClick="onButtonClicked"/>
+                <Button
+                    android:id="@+id/simple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButtonClicked"
+                    android:text="Simple" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/university"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButtonClicked"
+                    android:text="Univerity" />
+
+                <Button
+                    android:id="@+id/tarzan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButtonClicked"
+                    android:text="Tarzan" />
+            </TableRow>
+
+        </TableLayout>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

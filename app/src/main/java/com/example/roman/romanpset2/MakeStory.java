@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,6 +14,8 @@ import java.io.IOException;
 public class MakeStory extends AppCompatActivity {
 
     private Story newstory;
+    private TextView textView1;
+    private TextView textview2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +33,19 @@ public class MakeStory extends AppCompatActivity {
         String test = newstory.toString();
         Log.d("CREATION", test);
 
+        textView1 = findViewById(R.id.textView1);
+        textView1.setText("Please type a " + newstory.getNextPlaceholder() + " in the field below.");
+
+        textview2 = findViewById(R.id.textView2);
+        textview2.setText("Remaining words to fill in: " + newstory.getPlaceholderRemainingCount());
+
+
 
     }
     public void onButtonClicked(View view) {
         EditText editText = (EditText) findViewById(R.id.editText);
         newstory.fillInPlaceholder(editText.getText().toString());
+        editText.setText("");
 
         if (newstory.isFilledIn()) {
             Intent intent = new Intent(this, ReadStory.class);
@@ -42,6 +53,9 @@ public class MakeStory extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+        textView1.setText("Please type a " + newstory.getNextPlaceholder() + "in the field below.");
+        textview2.setText("Remaining words to fill in: " + newstory.getPlaceholderRemainingCount());
 
     }
 }

@@ -26,7 +26,7 @@ public class ChooseStory extends AppCompatActivity {
                 intent.putExtra("story", "madlib2_university.txt");
                 break;
             case R.id.clothes:
-                intent.putExtra("story", "madlib3_clothes");
+                intent.putExtra("story", "madlib3_clothes.txt");
                 break;
             case R.id.dance:
                 intent.putExtra("story", "madlib4_dance.txt");
