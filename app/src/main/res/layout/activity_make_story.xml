@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.example.roman.romanpset2.MakeStory">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButtonClicked"
+            android:text="Confirm"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="126dp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

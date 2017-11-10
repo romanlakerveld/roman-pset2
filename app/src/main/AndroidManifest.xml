@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChooseStory" />
-        <activity android:name=".MakeStory"></activity>
+        <activity android:name=".MakeStory" />
+        <activity android:name=".ReadStory"></activity>
     </application>
 
 </manifest>
