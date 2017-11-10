@@ -1,5 +1,5 @@
-package com.example.roman.romanpset2;/*
- * com.example.roman.romanpset2.Story.java
+/*
+ * Story.java
  * Madlibs
  *
  * Created by Hella Haanstra on April 15, 2016
@@ -13,10 +13,11 @@ package com.example.roman.romanpset2;/*
  * To see how many placeholders are left, use the methods
  *  getPlaceholderRemainingCount and isFilledIn.
  * You can get the story's text by calling its toString method.
- * A com.example.roman.romanpset2.Story is Serializable, so it can be packed into an Intent as "extra" data.
+ * A Story is Serializable, so it can be packed into an Intent as "extra" data.
  */
 
 // !YOU MAY WANT TO CHANGE THE PACKAGE BELOW SO THAT IT MATCHES YOUR PROJECT'S PACKAGE!
+package com.example.roman.romanpset2;
 
 import java.io.*;
 import java.util.*;
@@ -36,7 +37,7 @@ public class Story implements Serializable {
         clear();
     }
 
-    /** constructs a new com.example.roman.romanpset2.Story reading its text from the given input stream */
+    /** constructs a new Story reading its text from the given input stream */
     public Story(InputStream stream) {
         read(stream);
     }
@@ -106,7 +107,6 @@ public class Story implements Serializable {
                 if (!text.isEmpty()) {
                     text += " ";
                 }
-
                 text += word;
             }
         }
