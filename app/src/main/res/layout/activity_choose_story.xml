@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context="com.example.roman.romanpset2.ChooseStory">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your story" />
+
+        <Button
+            android:id="@+id/simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/tarzan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarzan"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/university"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Univerity"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/clothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clothes"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/dance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dance"
+            android:onClick="onButtonClicked"/>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

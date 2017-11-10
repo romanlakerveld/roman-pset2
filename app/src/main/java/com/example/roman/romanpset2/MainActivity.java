@@ -1,5 +1,6 @@
 package com.example.roman.romanpset2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToChoice(View view) {
-        TextView text = findViewById(R.id.textView);
-        text.setText("Rusland ist dat schones land");
+        Intent intent = new Intent(this, ChooseStory.class);
+        startActivity(intent);
+        finish();
     }
 
 }
