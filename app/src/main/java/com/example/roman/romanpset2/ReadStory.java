@@ -20,4 +20,11 @@ public class ReadStory extends AppCompatActivity {
         TextView story = (TextView) findViewById(R.id.storyview);
         story.setText(text);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }
